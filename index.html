@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js" defer></script>
+    <title>Formulario de datos</title>
+  </head>
+  <body>
+    <div id="classContainer">
+      <div>
+        <p>
+          Este es un ejemplo muy basico de uso de javascript para manejo de
+          informacion en una pagina.
+        </p>
+        <h1>Instrucciones</h1>
+        <ul>
+          <li>Introduce los datos requeridos en el formulario.</li>
+          <li>
+            Haz click en el boton "Guardar Datos" para que los datos del
+            formulario sean guardados en variables por javascript.
+          </li>
+          <li>
+            Haz click en el boton "Transferir a la tabla" lo cual enviara los
+            datos desde las variables hacia la seccion del html donde seran
+            mostrados en una tabla.
+          </li>
+        </ul>
+      </div>
+      <h1>Formulario de datos</h1>
+      <form id="myForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Número de celular:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <input type="submit" value="Guardar Datos" />
+      </form>
+      <br />
+      <button onclick="myFunction()">Transferir a la tabla</button>
+      <br /><br />
+      <div>
+        <table id="myTable" style="margin: 0 auto; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Teléfono Celular</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="regNombre"></td>
+              <td id="regEmail"></td>
+              <td id="regPhone"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
