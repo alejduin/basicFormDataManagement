@@ -1,3 +1,5 @@
+console.log("Hola Mundo");
+
 var nombre, email, phone;
 
 function myFunction() {
